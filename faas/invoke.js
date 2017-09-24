@@ -6,11 +6,11 @@ const got = require('got');
 const invoke = gateway => {
 	const url = gateway;
 
-	return (name, data) => {
+	return (name, data, isJson) => {
 		const funcPath = path.join('/function', name);
 		const options = {
 			method: 'POST',
-			json: true
+			json: isJson || false
 		};
 
 		if (data) {

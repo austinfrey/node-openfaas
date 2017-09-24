@@ -18,7 +18,8 @@ faas.deploy(
 
 faas.invoke(
 	'yolo', // function name
-	'hello world' // data to send to function
+	'hello world', // data to send to function
+	true //should response be JSON? optional. default is false
 )
 	.then(x => console.log(x)) // handle response
 	.catch(err => console.log(err))

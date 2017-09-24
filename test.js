@@ -42,7 +42,7 @@ test('Test full API', t => {
 		'hello-serverless'
 	)
 		.then(x => t.equals(x.statusCode, 200))
-		.then(() => faas.invoke('test-func'))
+		.then(() => faas.invoke('test-func', null, true))
 		.then(x => t.same(x.body, {status: 'done'}))
 		.then(() => faas.compose('', [
 			'func_nodeinfo',
