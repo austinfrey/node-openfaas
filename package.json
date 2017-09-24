@@ -1,19 +1,33 @@
 {
-  "name": "open-faas",
+  "name": "openfaas",
   "version": "0.0.1",
-  "description": "",
+  "description": "NodeJS wrapper around the OpenFaaS Gateway API w/ some additional helper functions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test",
+    "lint": "xo --fix"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Austin Frey",
+  "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.0",
     "got": "^7.1.0"
   },
   "devDependencies": {
+    "nock": "^9.0.20",
     "tape": "^4.8.0",
     "xo": "^0.18.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinfrey/node-openfaas.git"
+  },
+  "keywords": [
+    "serverless",
+    "FaaS"
+  ],
+  "bugs": {
+    "url": "https://github.com/austinfrey/node-openfaas/issues"
+  },
+  "homepage": "https://github.com/austinfrey/node-openfaas#readme"
 }
