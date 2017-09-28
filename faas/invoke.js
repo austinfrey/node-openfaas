@@ -11,7 +11,7 @@ const invoke = gateway => {
 		const options = {
 			method: 'POST',
 			json: isJson,
-                        encoding: (isBinaryResponse ? null : 'utf8')
+			encoding: (isBinaryResponse ? null : 'utf8')
 		};
 
 		if (data) {
